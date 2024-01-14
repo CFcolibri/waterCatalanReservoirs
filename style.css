@@ -1,0 +1,151 @@
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  /* background-color: rgb(214, 218, 220); */
+}
+
+.bar-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+  /* border: 1px solid rgb(63, 77, 167); */
+  /* margin-top: 100px; */
+}
+
+.left-line,
+.right-line {
+  position: absolute;
+  top: 136.8px; 
+  width: 5.5%;
+  height: 111.8px;
+  background-color: rgb(56, 55, 55);
+  border: solid 290px rgb(56, 55, 55);
+  
+}
+
+.right-line {
+  right: -58.9%;
+  border-top-left-radius: 85px;
+}
+.left-line {
+  left: -58.9%;
+  border-top-right-radius: 85px;
+}
+
+.bottom-line {
+  position: absolute;
+  bottom: 46px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: rgb(56, 55, 55);
+  border: solid 53px rgb(56, 55, 55);
+}
+
+#bar-graph {
+  border: 100px solid rgb(56, 55, 55);
+  width: 700px;
+  height: 500px;
+  border-top: transparent;
+  border-bottom-left-radius: 350px; 
+  border-bottom-right-radius: 350px; 
+  margin: 25px auto 50px;
+}
+
+#estaciSelect {
+  color: rgb(119, 117, 117);
+  background-color: rgb(56, 55, 55);
+  border: none;
+  font-size: 18px;
+}
+
+#startButton {
+  margin-top: 10px; 
+  margin-bottom: 50px; 
+  font-size: 34px;
+  border: none;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  color: rgb(56, 55, 55);
+  background-color: transparent;
+  cursor: pointer;
+  /* margin-top: 20px; */
+} 
+
+#startButton:hover {
+  background-color: #1985cd; 
+}
+
+
+#legend {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  margin-top: 50px; 
+  margin-bottom: 0px;
+}
+
+.legend-item {
+  text-align: center;
+  position: relative;
+}
+
+.legend-item::before {
+  content: attr(data-text);
+  display: block;
+  position: absolute;
+  top: -20px; 
+  left: 50%;
+  transform: translateX(-50%);
+  color: black;
+}
+
+
+#legend span {
+  width: 80px; 
+  height: 10px; 
+  position: relative;
+}
+
+#line-graph {
+  width: 1500px;
+  height: 1000px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.median-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 50px;
+}
+
+#container-pie {
+  margin-left: 350px; 
+  width: 100px;
+  height: 100px;
+  margin-bottom: 40px;
+}
+
+#estaci {
+  align-items: center; 
+  margin-left: 800px;
+  font-size: 20px;
+  background-color: transparent;
+  border-color: #218da3;
+  border-radius: 30px;
+}
+
+
